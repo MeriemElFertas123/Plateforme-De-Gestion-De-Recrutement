@@ -1,0 +1,326 @@
+.mes-entretiens {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.stat-badge.upcoming {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.stat-badge.past {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+/* Section */
+.section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+/* Entretiens List */
+.entretiens-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entretien-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  transition: all 0.3s;
+}
+
+.entretien-card.upcoming {
+  border-left: 4px solid #3b82f6;
+  background: linear-gradient(135deg, #eff6ff 0%, white 100%);
+}
+
+.entretien-card.upcoming:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.entretien-card.past {
+  border-left: 4px solid #9ca3af;
+  opacity: 0.8;
+}
+
+.entretien-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.entretien-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.entretien-card.upcoming .entretien-icon {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #3b82f6;
+}
+
+.entretien-card.past .entretien-icon {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.entretien-info {
+  flex: 1;
+}
+
+.entretien-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  color: #1f2937;
+}
+
+.entretien-date {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.entretien-date i {
+  color: #3b82f6;
+}
+
+.entretien-statut {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* Details */
+.entretien-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.detail-item i {
+  color: #10b981;
+  width: 1.25rem;
+}
+
+/* Commentaires */
+.entretien-commentaires {
+  padding: 1rem;
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.entretien-commentaires i {
+  color: #f59e0b;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.entretien-commentaires p {
+  margin: 0;
+  color: #78350f;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Evaluation */
+.entretien-evaluation {
+  padding: 0.875rem;
+  background: #f0fdf4;
+  border-left: 3px solid #10b981;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.entretien-evaluation i {
+  color: #10b981;
+  font-size: 1.25rem;
+}
+
+.entretien-evaluation p {
+  margin: 0;
+  color: #166534;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Actions */
+.entretien-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  padding: 0.625rem 1.25rem;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+/* Empty State */
+.empty-state {
+  background: white;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #9ca3af;
+}
+
+.empty-state i {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.empty-subtitle {
+  font-size: 0.875rem !important;
+  color: #9ca3af !important;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #6b7280;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .stats {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .stat-badge {
+    text-align: center;
+  }
+
+  .entretien-header {
+    flex-direction: column;
+  }
+
+  .entretien-statut {
+    align-self: flex-start;
+  }
+
+  .entretien-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}

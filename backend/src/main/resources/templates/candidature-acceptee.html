@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #52c41a 0%, #389e0d 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            padding: 30px 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .content h2 {
+            color: #52c41a;
+        }
+        .success-box {
+            background-color: #f6ffed;
+            border: 2px solid #52c41a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="header">
+        <h1>🎉 Félicitations !</h1>
+    </div>
+    <div class="content">
+        <h2>✅ Bienvenue dans l'équipe !</h2>
+
+        <p>Bonjour <strong th:text="${candidatNom}">Candidat</strong>,</p>
+
+        <div class="success-box">
+            <p style="font-size: 18px; margin: 0;">
+                <strong>Nous avons le plaisir de vous annoncer que votre candidature pour le poste de</strong>
+            </p>
+            <p style="font-size: 22px; color: #52c41a; margin: 10px 0;">
+                <strong th:text="${offreTitre}">Poste</strong>
+            </p>
+            <p style="font-size: 18px; margin: 0;">
+                <strong>a été retenue ! 🎊</strong>
+            </p>
+        </div>
+
+        <p>Nous avons été très impressionnés par votre profil et sommes ravis de vous accueillir dans notre équipe.</p>
+
+        <p><strong>📋 Prochaines étapes :</strong></p>
+        <ol>
+            <li>Un membre de notre équipe RH vous contactera dans les 48h</li>
+            <li>Nous vous enverrons votre contrat de travail</li>
+            <li>Nous définirons ensemble votre date de début</li>
+        </ol>
+
+        <p>Si vous avez des questions, n'hésitez pas à nous contacter.</p>
+
+        <p>Encore toutes nos félicitations et à très bientôt !</p>
+
+        <p>Cordialement,<br/>
+            <strong>L'équipe Recrutement</strong></p>
+    </div>
+    <div class="footer">
+        <p>© <span th:text="${anneeActuelle}">2025</span> Plateforme Recrutement</p>
+    </div>
+</div>
+</body>
+</html>

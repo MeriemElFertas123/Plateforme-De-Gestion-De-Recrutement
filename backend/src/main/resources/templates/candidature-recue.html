@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f5f5f5; }
+        .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%); color: #fff; padding: 30px; text-align: center; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .content { padding: 40px 30px; }
+        .info-box { background: #f0f2f5; border-left: 4px solid #52c41a; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        .footer { background: #f0f2f5; padding: 20px 30px; text-align: center; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>✅ Candidature Reçue</h1>
+    </div>
+    <div class="content">
+        <p>Bonjour <strong th:text="${candidatNom}">Candidat</strong>,</p>
+
+        <p>Nous accusons bonne réception de votre candidature pour le poste de <strong th:text="${offreTitre}">Poste</strong>.</p>
+
+        <div class="info-box">
+            <p style="margin: 0;"><strong>✓ Votre candidature a été enregistrée avec succès</strong></p>
+            <p style="margin: 5px 0 0 0; font-size: 14px;">Notre équipe RH l'examine attentivement.</p>
+        </div>
+
+        <p><strong>Prochaines étapes :</strong></p>
+        <ul>
+            <li>Analyse de votre profil par notre équipe</li>
+            <li>Présélection des candidats</li>
+            <li>Convocation aux entretiens (si votre profil correspond)</li>
+        </ul>
+
+        <p>Nous vous recontacterons dans les plus brefs délais si votre profil retient notre attention.</p>
+
+        <p>Cordialement,<br>
+            <strong>L'équipe Recrutement</strong></p>
+    </div>
+    <div class="footer">
+        <p>© <span th:text="${anneeActuelle}">2025</span> Plateforme Recrutement. Tous droits réservés.</p>
+    </div>
+</div>
+</body>
+</html>
