@@ -120,11 +120,17 @@ JWT - Authentification
 **Frontend**
 
 React 19.x
+
 React Router - Navigation
+
 Vite - Build tool
+
 Axios - Requêtes HTTP
+
 Font Awesome - Icônes
+
 CSS3 - Styling
 
 Utilisation de MongoDB avec Docker ⭐
+
 Docker permet de conteneuriser MongoDB, c'est-à-dire de l'exécuter dans un environnement isolé et reproductible
