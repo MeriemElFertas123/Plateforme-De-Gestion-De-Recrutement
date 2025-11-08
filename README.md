@@ -3,10 +3,13 @@ Application web complète de gestion de processus de recrutement avec Spring Boo
 <img width="1270" height="720" alt="4" src="https://github.com/user-attachments/assets/b92cba8b-061a-417e-83a4-9ed60ab5941b" />
 
 🌟 Aperçu
+
 RecrutApp est une solution complète pour gérer l'ensemble du processus de recrutement, 
 de la publication d'offres d'emploi jusqu'à l'embauche des candidats. 
 L'application propose deux espaces distincts :
+
 => Espace Recruteur : Gestion complète des offres, candidatures et entretiens
+
 <img width="1366" height="614" alt="10" src="https://github.com/user-attachments/assets/7b34282d-49b0-4f2f-a91d-7064b4cdc3e9" />
 <img width="1363" height="768" alt="11" src="https://github.com/user-attachments/assets/ed03fb15-9bee-48d8-8743-f8458d92c5d2" />
 <img width="1366" height="768" alt="12" src="https://github.com/user-attachments/assets/5f2c7ac3-3c2f-4e19-8cc4-60c23efd4f46" />
@@ -25,11 +28,13 @@ L'application propose deux espaces distincts :
 
 
 => Espace Candidat : Consultation des offres, postulation et suivi des candidatures
+
 <img width="1366" height="768" alt="5" src="https://github.com/user-attachments/assets/9d9e2b5e-52b2-4c08-bc10-b677063faa2f" />
 <img width="1366" height="768" alt="6" src="https://github.com/user-attachments/assets/23afec1d-9c6a-4a99-b2eb-ed8d66fbb248" />
 <img width="1366" height="768" alt="7" src="https://github.com/user-attachments/assets/f82403ac-40de-4fd1-b3eb-a0aeae3394f0" />
 <img width="1366" height="768" alt="8" src="https://github.com/user-attachments/assets/c9a9d912-6526-494e-966a-d4e25bb5dbfa" />
 <img width="1137" height="608" alt="9" src="https://github.com/user-attachments/assets/96e0c2df-c91e-46c8-9d6d-1fd8a9c27825" />
+
 => page de connexion:
 <img width="643" height="528" alt="1" src="https://github.com/user-attachments/assets/c67457d9-2208-44fd-9528-ecbe5d9af30d" />
 <img width="1107" height="604" alt="2" src="https://github.com/user-attachments/assets/abc15560-574d-4b84-b169-59444420484c" />
