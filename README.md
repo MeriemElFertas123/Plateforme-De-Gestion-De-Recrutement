@@ -40,6 +40,7 @@ L'application propose deux espaces distincts :
 <img width="1107" height="604" alt="2" src="https://github.com/user-attachments/assets/abc15560-574d-4b84-b169-59444420484c" />
 
 ✨ Fonctionnalités
+
 👨‍💼 Espace Recruteur
 
 ✅ Gestion des offres d'emploi
@@ -102,19 +103,26 @@ Détails (date, lieu, interviewer)
 Historique des entretiens passés
 
 🛠️ Technologies
+
 **Backend**
 
 Java 17+
 Spring Boot 3.x
 
 Spring Web
+
 Spring Data MongoDB
+
 Spring Security
+
 Spring Validation
+
 Spring Boot Starter Mail - Envoi d'emails transactionnels
 
 MongoDB - Base de données NoSQL
+
 Maven - Gestion des dépendances
+
 JWT - Authentification
 
 **Frontend**
